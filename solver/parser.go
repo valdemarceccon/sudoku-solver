@@ -12,7 +12,7 @@ func parse(content string) ([]int, error) {
 		return !unicode.IsNumber(r)
 	})
 	if len(fields) != 81 {
-		return nil, fmt.Errorf("Incorrect string parameter, size %d, should be 81", len(fields))
+		return nil, fmt.Errorf("incorrect string parameter, size %d, should be 81", len(fields))
 	}
 	result := make([]int, 81)
 	for index, val := range fields {
